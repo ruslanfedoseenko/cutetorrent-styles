@@ -1,0 +1,92 @@
+
+
+QDialog, #CustomWindow
+{
+    background: qlineargradient(spread:pad, x1:0, y1:0.0, x2:0, y2:1, stop: 0 rgb(38,38,38), stop: 1 rgb(38,31,30));
+    border: 1px solid #193550;
+}
+#titleBar {
+    background: qlineargradient(spread:pad, x1:0, y1:0.0, x2:0, y2:1, stop: 0 rgb(26,45,63), stop: 1 rgb(38,38,38));
+    border-bottom: none;
+}
+
+#m_centralWidget, #centralWidget {
+    margin: 5px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    border: none;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0.0, x2:0, y2:1, stop: 0 rgb(38,38,38), stop: 1 rgb(38,31,30));
+}
+
+#pbMin,#pbMax,#pbClose,#closeBaloon{
+    border: none;
+    background-color: transparent;
+    min-width: 0px;
+    margin-right: 0px;
+    margin-right: 1px;
+    padding: 1px;
+}
+#pbMin:hover,#pbMax:hover,#pbClose:hover,#closeBaloon:hover {
+}
+
+QWidget
+{
+    color: rgb(150,150,150);
+}
+QSplitter::handle  {
+	background-color: transparent;
+}
+QTreeView {
+    left: 15px;
+    border: none;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0.0, x2:0, y2:1, stop: 0 rgb(37,37,37), stop: 1 rgb(22,22,22));
+	show-decoration-selected: 1;
+	outline: 0;
+}
+
+QListView {
+    border: none;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0.0, x2:0, y2:1, stop: 0 rgb(37,37,37), stop: 1 rgb(22,22,22));
+	outline: 0;
+	show-decoration-selected: 1;
+	selection-color: green;
+	selection-background-color: rgb(25,55,84);
+}
+QListView:item{
+	color: rgb(115,115,115);
+	
+	outline: 0;
+}
+
+QMenuBar {
+	background: transparent;
+}
+QMenu {
+	border: none;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0, x2:0, y2:1, stop: 0 rgb(74,74,74), stop: 1 rgb(54,54,54));
+}
+
+
+QMenu::item,QMenuBar::item {
+    padding: 4px 7px;
+    background: transparent;
+}
+
+QMenu::item{
+    padding-left:28px;
+}
+QMenu::item:disabled,QMenuBar::item:disabled { color: gray }
+QMenu::item:enabled:selected,QMenuBar::item:enabled:selected {
+   color: white;
+}
+QMenu::icon:checked {
+     border: 2px inset gray;
+     position: absolute;
+     top: 1px;
+     right: 2px;
+     bottom: 1px;
+     left: 1px;
+ }
+ QMenu::icon {
+     padding: 1px 2px 1px 2px;
+ }
