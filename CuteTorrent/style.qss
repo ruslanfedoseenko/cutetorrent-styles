@@ -22,8 +22,15 @@ QDialog, #CustomWindow
 }
 #m_pTorrentListView{
 	border-right: none;
+	border-top: none;	
 }
-#m_pGroupTreeWidget{
+#torrentSorterView{
+ border-left: 1px solid #909090;
+ border-top: 1px solid #909090;
+ border-bottom: none;
+ border-right: none;
+}
+#m_pGroupTreeView{
 border-left: none;
 }
 #pbMin,#pbMax,#pbClose,#closeBaloon{
@@ -305,8 +312,11 @@ QHeaderView::section {
     background-color: #c2c2c2;
     border: none;
     border-right: 1px solid #909090;
-    border-bottom: 1px solid #909090;
+	border-bottom: 1px solid #909090;
     min-height:20px;
+}
+QHeaderView::section:last{
+	 margin-right: -1px;
 }
 QHeaderView::section:pressed {
     background-color: #A1A1A1;
@@ -395,11 +405,11 @@ QListView::indicator ,QTreeView::indicator ,QGroupBox::indicator ,QCheckBox::ind
 }
 
 QRadioButton::indicator::unchecked {
-    image: url($[STYLE_DIR]/radiobutton_unchecked.png);
+    image: url($[STYLE_DIR]/radiobutton-unchecked.png);
 }
 
 QRadioButton::indicator::checked {
-    image: url($[STYLE_DIR]/radiobutton_checked.png);
+    image: url($[STYLE_DIR]/radiobutton-checked.png);
 }
 QListView::indicator:unchecked ,QTreeView::indicator:unchecked ,QGroupBox::indicator:unchecked ,QCheckBox::indicator:unchecked {
     image: url($[STYLE_DIR]/checbox-unchecked.png);
