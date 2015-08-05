@@ -22,7 +22,9 @@ QDialog, #CustomWindow
 }
 #m_pTorrentListView{
 	border-right: none;
-	border-top: none;	
+}
+#torrentSorterView::section{
+border-bottom: none;
 }
 #torrentSorterView{
  border-left: 1px solid #909090;
