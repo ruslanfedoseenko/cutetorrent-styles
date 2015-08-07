@@ -6,6 +6,11 @@
 QLabel#LTitile{
 	color: #b1b1b1;
 }
+
+#torrentSorterView{
+ min-height: 18px;
+ max-height: 18px;
+}
 QToolTip
 {
      border: 1px solid black;
@@ -26,10 +31,22 @@ QListView {
     show-decoration-selected: 1; 
 }
 
-QTreeView::branch:hover {
- background:QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #d6d6d6, stop: 1 #4d4d4d); 
-}
 
+QTreeView {
+    left: 15px;
+    border: 1px solid #909090;
+    background-color: transparent;
+	show-decoration-selected: 1;
+	outline: 0;
+	color:black;
+}
+QTreeView::branch{
+    background:transparent;
+}
+QTreeView::item:hover { background: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #d2d2d2, stop: 1 #4d4d4d); ; }
+QTreeView::branch:hover { background: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #d2d2d2, stop: 1 #4d4d4d); ; }
+QTreeView::item:selected { background: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #d6d6d6, stop: 1 #4d4d4d); }
+QTreeView::branch:selected { background: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #d6d6d6, stop: 1 #4d4d4d); }
 
 QListView:item:hover:!selected
 {
@@ -40,8 +57,8 @@ QListView:item:hover:!selected
 
 QTreeView::branch:selected , QListView:item:selected:!hover,QListView:item:selected:hover
 {
-	color:black;green;
-    background: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #2d2d2d, stop: 1 #4d4d4d);
+	color:black;
+    background: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #d6d6d6, stop: 1 #4d4d4d); 
 }
 
 QMenuBar::item

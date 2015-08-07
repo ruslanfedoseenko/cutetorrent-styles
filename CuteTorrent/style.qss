@@ -149,9 +149,7 @@ QScrollBar::sub-line:vertical
 QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
 {
       border: none;
-      
       height: 0px;
-      
 }
 
 
@@ -167,7 +165,8 @@ QSpinBox, QDateTimeEdit, QDoubleSpinBox, QDateEdit, QTimeEdit {
     background-color: #f0f0f0;
 }
 
-QSpinBox::up-button, QDateTimeEdit::up-button, QDoubleSpinBox::up-button, QDateEdit::up-button, QTimeEdit::up-button {
+QSpinBox::up-button, QDateTimeEdit::up-button, QDoubleSpinBox::up-button, QDateEdit::up-button, QTimeEdit::up-button 
+{
     subcontrol-origin: border;
     subcontrol-position: top right; /* position at the top right corner */
 
@@ -246,10 +245,12 @@ QMenu::icon:checked {
      right: 2px;
      bottom: 1px;
      left: 1px;
- }
- QMenu::icon {
+}
+
+QMenu::icon {
      padding: 1px 2px 1px 2px;
  }
+
 QMenuBar::item:enabled:open {
     color: white;
     background-color: rgb(120, 120, 120);
